@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. S. Saravanan — Professional Portfolio</title>
+  <meta name="description" content="Portfolio of Dr. S. Saravanan — Associate Professor (CSE), SRM Institute of Science and Technology, Chennai. Research in Deep Learning, Medical Imaging, Cybersecurity, and AI for Agriculture." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0d12; --card:#121520; --muted:#99a3b3; --text:#e6edf3; --primary:#4ea8de; --accent:#a78bfa; --ring:#293241;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;}
+    body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height:1.6; background:linear-gradient(180deg,#0b0d12,#0a0c10 30%,#0b0d12); color:var(--text);}    
+    a{color:var(--primary); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--maxw); margin:0 auto; padding:24px}
+    header.hero{position:relative; padding:56px 24px; background:radial-gradient(1200px 500px at 20% -10%, rgba(78,168,222,.15), transparent 60%),
+      radial-gradient(900px 600px at 120% -20%, rgba(167,139,250,.18), transparent 60%);}    
+    .hero .name{font-family:"Playfair Display",serif; font-size:40px; line-height:1.15; margin:0 0 8px}
+    .hero .role{font-size:18px; color:var(--muted); margin:0 0 18px}
+    .badges{display:flex; flex-wrap:wrap; gap:10px; margin-top:18px}
+    .badge{display:inline-flex; align-items:center; gap:8px; background:rgba(255,255,255,0.04); border:1px solid var(--ring); padding:8px 12px; border-radius:999px; font-size:13px; color:#d7dee7}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:10px; border:1px solid var(--ring); background:linear-gradient(180deg,#1a1f2b,#141823); color:#e9f0f7; font-weight:600}
+    .btn:hover{transform:translateY(-1px)}
+    nav.sticky{position:sticky; top:0; z-index:50; backdrop-filter:saturate(160%) blur(8px); background:rgba(8,10,14,.6); border-bottom:1px solid #161a22}
+    .nav-inner{max-width:var(--maxw); margin:0 auto; padding:10px 24px; display:flex; gap:18px; flex-wrap:wrap; align-items:center}
+    .nav-inner a{font-size:14px; color:#cbd5e1; padding:8px 10px; border-radius:8px}
+    .nav-inner a:hover{background:#151a24}
+    section{padding:34px 24px}
+    h2{font-size:22px; letter-spacing:.2px; margin:0 0 14px; font-weight:800}
+    .grid{display:grid; gap:16px}
+    @media(min-width:900px){
+      .grid.cols-2{grid-template-columns:1.2fr .8fr}
+      .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    }
+    .card{background:var(--card); border:1px solid #1a2030; border-radius:16px; padding:18px}
+    .card h3{margin:.2rem 0 .4rem; font-size:17px}
+    .muted{color:var(--muted)}
+    .list{display:grid; gap:12px; padding-left:0; margin:0}
+    .list li{list-style:none; background:#0f1320; border:1px solid #23283a; border-radius:14px; padding:14px}
+    .tag{display:inline-block; font-size:12px; color:#b9c4d3; padding:4px 8px; border:1px solid #283042; border-radius:999px; margin-right:6px}
+    .two-col{columns:2; column-gap:18px}
+    @media(max-width:900px){.two-col{columns:1}}
+    footer{padding:40px 24px; text-align:center; color:#9aa6b2}
+    .pill-links{display:flex; flex-wrap:wrap; gap:10px}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-size:12.5px}
+    .kvs{display:flex; flex-wrap:wrap; gap:10px; margin-top:10px}
+    .kvs .kv{background:#0f1320; border:1px solid #23283a; border-radius:12px; padding:8px 10px; font-size:13px}
+    details.pub{background:#0f1320; border:1px solid #23283a; border-radius:14px; padding:12px 14px}
+    details.pub summary{cursor:pointer; font-weight:600}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <img src="photo.png" alt="Dr. S. Saravanan" 
+     style="width:140px;height:140px;border-radius:50%;
+            border:3px solid #1a2030;object-fit:cover;
+            margin-bottom:14px;">
+<h1 class="name">Dr. S. Saravanan</h1>
+      <p class="role">Associate Professor, Department of Computer Science & Engineering<br/>SRM Institute of Science and Technology, Ramapuram, Chennai</p>
+      <div class="badges">
+        <span class="badge">ORCID: <a href="https://orcid.org/0000-0001-7884-3532" target="_blank" rel="noopener">0000-0001-7884-3532</a></span>
+        <span class="badge">Scopus ID: <a href="https://www.scopus.com/authid/detail.uri?authorId=57968968500" target="_blank" rel="noopener">57968968500</a></span>
+        <span class="badge">Web of Science ID: <a href="https://www.webofscience.com/wos/author/rid/AAS-2534-2020" target="_blank" rel="noopener">AAS-2534-2020</a></span>
+        <span class="badge">Email: <a href="mailto:saravananjask@gmail.com">saravananjask@gmail.com</a></span>
+        <span class="badge">Chennai, India</span>
+      </div>
+      <div class="kvs">
+        <span class="kv">Deep Learning</span>
+        <span class="kv">Medical Imaging</span>
+        <span class="kv">Cybersecurity</span>
+        <span class="kv">AI in Agriculture</span>
+      </div>
+      <p style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap">
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn" href="assets/Dr_S_Saravanan_CV.pdf" download>Download CV (PDF)</a>
+      </p>
+    </div>
+  </header>
+
+  <nav class="sticky">
+    <div class="nav-inner">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#publications">Publications</a>
+      <a href="#patents">Patents & Book</a>
+      <a href="#awards">Awards</a>
+      <a href="#certs">Certifications</a>
+      <a href="#service">Professional Service</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section id="about" class="grid cols-2">
+      <div class="card">
+        <h2>About</h2>
+        <p>
+          I am an academic and researcher focused on <strong>deep learning</strong>, <strong>medical image analysis</strong>, 
+          <strong>cybersecurity</strong>, and <strong>AI for agriculture</strong>. I currently serve as an 
+          <strong>Associate Professor</strong> in the Department of Computer Science and Engineering at 
+          SRM Institute of Science and Technology, Chennai. My work spans high-impact publications in SCI/Scopus journals, 
+          patents, and collaborative research across healthcare and agriculture.
+        </p>
+        <div class="kvs">
+          <span class="kv">Total Experience: 18+ years</span>
+          <span class="kv">H-index (Scopus): 12</span>
+          <span class="kv">Articles: 37+</span>
+          <span class="kv">Citations: 530+</span>
+        </div>
+      </div>
+      <div class="card">
+        <h2>Quick Links</h2>
+        <div class="pill-links">
+          <a class="btn" href="https://orcid.org/0000-0001-7884-3532" target="_blank" rel="noopener">ORCID</a>
+          <a class="btn" href="https://www.scopus.com/authid/detail.uri?authorId=57968968500" target="_blank" rel="noopener">Scopus</a>
+          <a class="btn" href="#publications">Recent Publications</a>
+          <a class="btn" href="#service">Reviewer Roles</a>
+        </div>
+        <p class="muted" style="margin-top:12px">Replace the CV link with your hosted PDF in <span class="mono">/assets/</span>.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <ul class="list">
+        <li>
+          <h3>Associate Professor — SRM Institute of Science and Technology, Ramapuram</h3>
+          <p class="muted">May 2025 – Present · Chennai, India</p>
+        </li>
+        <li>
+          <h3>Associate Professor — Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology</h3>
+          <p class="muted">Aug 2022 – May 2025 · Avadi, Chennai</p>
+        </li>
+        <li>
+          <h3>Assistant Professor — PSNA College of Engineering and Technology</h3>
+          <p class="muted">Jul 2009 – Aug 2022 · Dindigul, Tamil Nadu</p>
+        </li>
+        <li>
+          <h3>System Security Analyst — E4E Business Solutions (Symantec)</h3>
+          <p class="muted">Apr 2007 – Jun 2009 · Bangalore</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="education" class="grid cols-3">
+      <div class="card">
+        <h2>Education</h2>
+        <h3>Ph.D., Information & Communication Engineering</h3>
+        <p class="muted">Anna University (PSNA College of Engineering & Technology) — 2021</p>
+        <p>Thesis: Performance Analysis of Brain Images and Various Classifiers.</p>
+      </div>
+      <div class="card">
+        <h2>&nbsp;</h2>
+        <h3>M.E., Information Technology</h3>
+        <p class="muted">Anna University (PSNA College of Engineering & Technology) — 2012</p>
+      </div>
+      <div class="card">
+        <h2>&nbsp;</h2>
+        <h3>B.E., Electronics & Communication Engineering</h3>
+        <p class="muted">Anna University (Christian College of Engineering & Technology) — 2005</p>
+      </div>
+    </section>
+
+    <section id="publications" class="card">
+      <h2>Selected Recent Publications</h2>
+      <p class="muted">Abridged list from 2024–2025 (SCI/Scopus indexed). Replace/add DOIs as needed.</p>
+      <div class="two-col">
+        <p><strong>Food Analytical Methods</strong> (2025). Multi-Class Fruit Freshness and Adulteration Detection Using Deep Learning Models Optimized by Simulated Annealing and Grad-CAM. (Q2)</p>
+        <p><strong>Scientific Reports</strong> (2025). Robust Multiclass Classification of Crop Leaf Diseases Using Hybrid Deep Learning and Grad-CAM Interpretability. 15:29955. (Q1)</p>
+        <p><strong>BMC Plant Biology</strong> (2025). DBA-ViNet: an effective deep learning framework for fruit disease detection and classification using explainable AI. 25:965. (Q1)</p>
+        <p><strong>BMC Plant Biology</strong> (2025). Corn leaf disease diagnosis: enhancing accuracy with ResNet152 and Grad‑CAM for explainable AI. 25:1–21. (Q1)</p>
+        <p><strong>Journal of Big Data</strong> (2025). A Secure Hybrid Deep Learning Framework for Brain Tumor Detection and Classification. 12:1–35. (Q1)</p>
+        <p><strong>BMC Plant Biology</strong> (2025). Sugarcane Leaf Disease Classification Using Deep Neural Network Approach. 25:282. (Q1)</p>
+        <p><strong>Intelligence-Based Medicine</strong> (2025). A Multimodal ML Model for Bipolar Disorder Mania Classification from Acoustic, Linguistic & Visual Cues. 100223:1–27. (Q2)</p>
+        <p><strong>Plant Methods</strong> (2025). Robust CRW Crops Leaf Disease Detection & Classification Using Hybrid DL Models. 21:18. (Q1)</p>
+        <p><strong>BMC Medical Imaging</strong> (2024). Robust brain tumor classification by fusion with channel‑wise attention. 24(1):1–17. (Q2)</p>
+        <p><strong>Scientific Reports</strong> (2024). Detection of Parkinson disease using a multiclass ML approach. 14(1):1–17. (Q1)</p>
+      </div>
+      <details class="pub" style="margin-top:12px">
+        <summary>Show full 2019–2025 publication list</summary>
+        <p class="muted">Include remaining items from the CV including Diagnostics, Sensors, Electronics, Systems & Soft Computing, etc.</p>
+      </details>
+    </section>
+
+    <section id="patents" class="grid cols-2">
+      <div class="card">
+        <h2>Patents</h2>
+        <ul class="list">
+          <li>Embedded Based Automation for Drip Irrigation System — Patent No. 202141007214 A (2021).</li>
+          <li>Smart Notice Board Using IoT — Patent No. 202141012048 A (2021).</li>
+          <li>A Conceptual Framework for Changing Demands in Indian Healthcare Services — Patent No. 2022414047655 A (2022).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Book</h2>
+        <p><strong>Advancing Medical Research Through Neuroscience</strong>, IGI Global InfoSci, ISBN 9798369354643 (Oct 2024).</p>
+      </div>
+    </section>
+
+    <section id="awards" class="grid cols-2">
+      <div class="card">
+        <h2>Awards</h2>
+        <ul class="list">
+          <li>Academic Excellence Award, TRP Academic Awards (2021–2022).</li>
+          <li>Best Fast Tracker Award, Symantec Project — E4E Business Solutions (Aug 2008).</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Conferences (Selected)</h2>
+        <ul class="list">
+          <li>Chairperson — International Virtual Conference on Research Innovation in Science, Engineering and Technology (Mar 2021).</li>
+          <li>Performance Analysis of Medical Diagnosis of Breast Cancer Using CNN — SRM IST (May 2021).</li>
+          <li>IOT and Sensor Based Network Applications — Sri Subramanya College of Engineering & Technology (Mar 2018).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="certs" class="card">
+      <h2>Certifications</h2>
+      <div class="two-col">
+        <p>Microsoft Certified Professional (MCP ID: 6792342) · Trained MCSA.</p>
+        <p>Cisco Certified Network Associate (training).</p>
+        <p>Google Cloud Product Fundamentals (Coursera)</p>
+        <p>IBM — Introduction to Cybersecurity Tools & Cyber Attacks (Coursera)</p>
+        <p>Intel Network Academy — Network Transformation (Coursera)</p>
+        <p>Palo Alto Networks Cybersecurity Essentials (Coursera)</p>
+        <p>Faculty Development Program (Atos/Syntel), Vel Tech University (May 2023)</p>
+      </div>
+    </section>
+
+    <section id="service" class="grid cols-2">
+      <div class="card">
+        <h2>Reviewer Roles</h2>
+        <ul class="list">
+          <li>Scientific Reports (Springer Nature)</li>
+          <li>Cluster Computing (Springer)</li>
+          <li>BMC Medical Informatics and Decision Making (Springer)</li>
+          <li>Discover Computing (Springer)</li>
+          <li>Annual Research & Review in Biology</li>
+          <li>Journal of Cancer and Tumor International</li>
+          <li>Journal of Pharmaceutical Research International</li>
+          <li>Journal of Advances in Medical and Pharmaceutical Sciences</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Domains</h2>
+        <p class="kvs">
+          <span class="tag">Deep Learning</span>
+          <span class="tag">Medical Imaging</span>
+          <span class="tag">Cybersecurity</span>
+          <span class="tag">AI in Agriculture</span>
+          <span class="tag">Signal Processing</span>
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:saravananjask@gmail.com">saravananjask@gmail.com</a></p>
+      <p>Phone: <a href="tel:+917502508311">+91 75025 08311</a></p>
+      <p>Location: Chennai, India</p>
+      <p class="muted">You can also link LinkedIn, Google Scholar, and ResearchGate profiles here.</p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Dr. S. Saravanan · Designed by ChatGPT · Built with semantic HTML & CSS
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
